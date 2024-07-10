@@ -1,6 +1,11 @@
 # Service
 
-This repository allows you to deploy a service with [model](https://github.com/EugeneRomanov/planet_classification/tree/main/hw_01_modeling-dev) results for multiclass forecasting for the "Planet" dataset
+После того, как было обучена модель в данном [репозитории](https://github.com/EugeneRomanov/JMLC_ITMO_2024/tree/main/modelling), мы можем перейти к созданию и деплою сервиса в Gitlab.
+
+Этапы деплоя сервиса представлены на рисунке: 
+![image](https://github.com/EugeneRomanov/JMLC_ITMO_2024/assets/72860505/66ed7890-6fbf-4f03-84f3-c902ba60f694)
+
+
 
 ## Preparing the environment
 Makefile allows you to simply get started with this project.
