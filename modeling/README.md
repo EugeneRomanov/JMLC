@@ -1,19 +1,25 @@
 # Modelling
 
+Данный репозиторий позволяет обучить модель машинного обучения для классификации спутниковых снимков, способную идентифицировать участки незаконной вырубки лесов в бассейне Амазонки.
+
 ## Описание данных
-The dataset contains satellite images of nature representing 17 classes.  Each photo is presented in jpg format. An example of each class can be found in the folder artifacts/class_examples.jpeg
+Датасет состоит из 4000 снимков формата .jpg бассейна Амазонки со спутника Planet's Flock 2 станции International Space. Всего на снимках представлено 17 классов явлений, описывающих состояние леса. 
 
 ## Структура проекта
-First of all, you need to upload the project to your working directory using GIT. 
-Run the following command: git clone https://gitlab.deepschool.ru/cvr-dec23/e.romanov/hw_01_modeling.git
 
-The project structure contains the following modules:
+Репозиторий дял моделирования содержит следующие модули:
+- configs: файл с конфигом дял установки параметров для обучения модели.
+- src: основне модули используемые для обучения модели.
 
-- configs: config file foy your work.
-- src: main modules used for modeling and inference.
+## Подготовка к обучению модели
+Освновные команды дял запуска обучения модели реализованы в Makefile, что позволяет удобно запускать обучение модели. 
 
-## Подготовка окружения
-Makefile allows you to simply get started with this project.
+0. Начало работы.
+В первую чоередь нужно загрузить данный репозиторий в свою рабочую директорию при помощи GIT.
+   
+```bash
+git clone https://github.com/EugeneRomanov/JMLC_ITMO_2024.git
+```
 
 1. Установка environment.
 ```bash
@@ -29,25 +35,27 @@ make install_requirements
 ```bash
 make download_dataset
 ```
-4. Настройка параметров в [config.yaml](configs/config.yaml) for you training model.
 
-5. ClearML:
+4. Настройка параметров в [config.yaml](configs/config.yaml) для обучения модели.
+
+5. Настройка логирования экспериментов в ClearML:
     - Регистрация в [ClearML](https://app.community.clear.ml/).
-    - [In your profile ClearML](https://app.community.clear.ml/profile) press "Create new credentials"
-    - Run `clearml-init` in you console.
-    - Fill out credentials
+    - [В ваше профиле ClearML](https://app.clear.ml/settings/workspace-configuration) нажми "Create new credentials" и скопируй содержимое.
+    - Запусти команду `clearml-init` в твоем терминале.
+    - Вставь содержимое credentials
 
 ## Обучение модели
+Запусти обучение модели при помощи команды:
 
 ```bash
 make train
 ```
 
 ## Проверка кода на styleguide
-You can also check your code using linters. Run the command:
+даополнительно можно проверить код на stylefuide при помощи библиотеки Flake8. 
 
+Для этого установи параметры для [setup.cfg](setup.cfg) и запусти првоерку с помощью: 
 ```bash
 make lint 
 ```
-If you want to change the linter parameters, then configure [setup.cfg](setup.cfg) for yourself
 
