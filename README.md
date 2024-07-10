@@ -25,5 +25,5 @@
 
 Разработанный сервис: http://91.206.15.25:1001/docs
 
-Основные технологии: FastAPI, Docker, Flake8, Pytest, Gitlab CI/CD, DVC
+Основные технологии: FastAPI, Docker, Flake8, Pytest, Gitlab CI/CD, DVC.
 
