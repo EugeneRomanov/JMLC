@@ -3,7 +3,7 @@ services:
     model_path: 'weights/model.pt'
     device: 'cpu'
     pic_size: [224, 224]
-    threshold: 0.7
+    threshold: 0.5
     classes:
       - 'road'
       - 'haze'

@@ -15,7 +15,7 @@ TESTS_DIR = os.path.dirname(__file__)
 
 @pytest.fixture(scope='session')
 def sample_image_bytes():
-    f = open(os.path.join(TESTS_DIR, 'images', 'deeper.jpeg'), 'rb')  # noqa: WPS515
+    f = open(os.path.join(TESTS_DIR, 'images', 'amazonia.jpeg'), 'rb')  # noqa: WPS515
     try:
         yield f.read()
     finally:
@@ -24,7 +24,7 @@ def sample_image_bytes():
 
 @pytest.fixture
 def sample_image_np():
-    img = cv2.imread(os.path.join(TESTS_DIR, 'images', 'deeper.jpeg'))
+    img = cv2.imread(os.path.join(TESTS_DIR, 'images', 'amazonia.jpeg'))
     return cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 
