@@ -1,4 +1,4 @@
-# hw1_mod service
+# Service
 
 This repository allows you to deploy a service with [model](https://github.com/EugeneRomanov/planet_classification/tree/main/hw_01_modeling-dev) results for multiclass forecasting for the "Planet" dataset
 
