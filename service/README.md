@@ -7,30 +7,33 @@
 
 
 
-## Preparing the environment
-Makefile allows you to simply get started with this project.
+## Подготовка окружения
+Освновные команды для запуска сервиса реализованы в Makefile.
 
-1. Install environment.
+1. Установка environment.
 ```bash
 make venv
 ```
 
-2. Install requirements.
+2. Установка requirements.
 ```bash
 make install_requirements
 ```
 
-## Run service
+## Запуск сервиса
 
 ```bash
 make run_app
 ```
 
-## Build the image
+## Сбор образа
 
 ```bash
 make build
 ```
+
+*******
+
 
 ## Linter style code
 You can also check your code using linters. Run the command:
