@@ -48,7 +48,7 @@ make download_dataset
     - Вставь содержимое credentials
 
 6. Проверка кода на styleguide
-Дополнительно можно проверить код на stylefuide при помощи библиотеки Flake8. Для этого установи параметры для [setup.cfg](setup.cfg) и запусти проверку. 
+Дополнительно можно проверить код на styleguide при помощи библиотеки Flake8. Для этого установи параметры для [setup.cfg](setup.cfg) и запусти проверку. 
 ```bash
 make lint 
 ```
@@ -63,4 +63,4 @@ make train
 
 Лучший эксперимент можно посмотреть [здесь](https://app.clear.ml/projects/6af89bf5de40410faba201b8130632ce/experiments/07ff5733d5034edea427f7fae84914b2/output/execution).
 
-ЛУчшая модель загружена в DVC и будет использована для создания и деплоя сервиса в данном [репозитории](https://github.com/EugeneRomanov/JMLC_ITMO_2024/tree/main/service)
+ЛУчшая модель загружена в DVC и будет использована для создания и деплоя сервиса в данном [репозитории](https://github.com/EugeneRomanov/JMLC_ITMO_2024/tree/main/service).
