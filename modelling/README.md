@@ -49,7 +49,8 @@ make download_dataset
     - Запусти команду `clearml-init` в твоем терминале.
     - Вставь содержимое credentials
 
-6. Проверка кода на styleguide
+6. Проверка кода на styleguide.
+
 Дополнительно можно проверить код на styleguide при помощи библиотеки Flake8. Для этого установи параметры для [setup.cfg](setup.cfg) и запусти проверку. 
 ```bash
 make lint 
