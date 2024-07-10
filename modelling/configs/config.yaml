@@ -1,14 +1,14 @@
 project_name: 'Amazondataset' 
-experiment_name: 'experiment1'
+experiment_name: 'experiment_v1_10_07'
 num_classes: 17 
-n_epochs: 1 
-accelerator: 'cpu' 
-device: 1
+n_epochs: 20
+accelerator: 'gpu' 
+device: 0
 monitor_metric: 'val_f1'
 monitor_mode: 'max'
 
 model_kwargs:
-  model_name: 'resnet18'
+  model_name: 'resnet50'
   pretrained: true
 
 optimizer: 'torch.optim.AdamW'
@@ -23,13 +23,13 @@ scheduler_kwargs:
 
 losses:
   - name: 'bce'
-    weight: 1.0
-    loss_fn: 'torch.nn.BCEWithLogitsLoss'
+    weight: [ 0.5554, 20.1766,  7.9349, 20.6021, 67.7216,  0.2406,  3.2742, 68.3988,  1.5043,  1.8688,  2.5361,  0.942 ,  0.1823,  0.8475, 20.1173, 32.7267,  0.9229]
+    loss_fn: 'torch.nn.BCEWithLogitsLoss' 
     loss_kwargs: {}
 
 data_config:
   data_path: 'dataset/planet/planet'
-  batch_size: 64
+  batch_size: 256
   n_workers: 4
   train_size: 0.8
   width: 224

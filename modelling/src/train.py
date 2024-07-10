@@ -7,10 +7,10 @@ from pytorch_lightning.callbacks import (
     LearningRateMonitor,
     ModelCheckpoint,
 )
-from config import Config
-from constants import EXPERIMENTS_PATH
-from datamodule import AmazonDM
-from lightning_module import AmazonModule
+from config import Config 
+from constants import EXPERIMENTS_PATH 
+from datamodule import AmazonDM 
+from lightning_module import AmazonModule 
 
 
 def arg_parse():
@@ -43,11 +43,11 @@ def train(config: Config):
     trainer = pl.Trainer(
         max_epochs=config.n_epochs,
         accelerator=config.accelerator,
-        devices=config.device ,  # для цпу поменял, для гпу было [config.device]
+        devices=[config.device] ,
         log_every_n_steps=20,
         callbacks=[
             checkpoint_callback,
-            EarlyStopping(monitor=config.monitor_metric, patience=4, mode=config.monitor_mode),
+            EarlyStopping(monitor=config.monitor_metric, patience=15, mode=config.monitor_mode),
             LearningRateMonitor(logging_interval='epoch'),
         ],
     )

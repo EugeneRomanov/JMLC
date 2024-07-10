@@ -6,7 +6,7 @@ from pydantic import BaseModel
 
 class LossConfig(BaseModel):
     name: str
-    weight: float
+    weight: list
     loss_fn: str
     loss_kwargs: dict
 

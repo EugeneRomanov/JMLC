@@ -1,6 +1,7 @@
 import pytorch_lightning as pl
 import torch
 from timm import create_model
+
 from config import Config
 from losses import get_losses
 from metrics import get_metrics
@@ -82,5 +83,7 @@ class AmazonModule(pl.LightningModule):
             loss = cur_loss.loss(pr_logits, gt_labels)
             total_loss += cur_loss.weight * loss
             self.log(f'{prefix}{cur_loss.name}_loss', loss.item())
-        self.log(f'{prefix}total_loss', total_loss.item())
+        
+        total_loss = total_loss.sum()
+        self.log(f'{prefix}total_loss', total_loss.item()) #self.log(f'{prefix}total_loss', total_loss.item())
         return total_loss
