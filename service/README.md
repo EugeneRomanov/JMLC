@@ -4,7 +4,18 @@
 
 Основные технологии: FastAPI, Docker, Flake8, Pytest, Gitlab CI/CD, DVC.
 
-## Deploy
+## Структура репозитория
+
+Репозиторий содержит несколько модулей:
+- config: файл с конфигом для запуска сервиса.
+- deploy/ansible: вспомогательные команды для деплоя сервиса.
+- example_ansible: вспомогательные команды для деплоя сервиса.
+- src: основные модули, которые описывают функционал сервиса.
+- tests: unit/integration тесты для кода сервиса.
+- weights: папка, куда скачиваются веса модели из DVC. 
+
+
+## Запуск и деплой сервиса
 Основные этапы деплоя сервиса описаны в файле [.gitlab-ci.yml](https://github.com/EugeneRomanov/JMLC_ITMO_2024/blob/main/service/.gitlab-ci.yml) и представлены на схеме: 
 
 ![image](https://github.com/EugeneRomanov/JMLC_ITMO_2024/assets/72860505/66ed7890-6fbf-4f03-84f3-c902ba60f694)
@@ -17,4 +28,13 @@
   - deploy: деплой сервиса в FastAPI. 
 
 ## Сервис
+Сервис имеет 3 метода: 
+
+- прогнозирование класса.
+- прогнозирование вероятности.
+- вывод списка классов.
+
+![image](https://github.com/EugeneRomanov/JMLC_ITMO_2024/assets/72860505/e41cda9c-971e-4baa-bb90-91ad72c379cf)
+
+
 Задеплоенный сервис доступен по ссылке: http://91.206.15.25:1001/docs
