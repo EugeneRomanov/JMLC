@@ -9,43 +9,12 @@
 
 ![image](https://github.com/EugeneRomanov/JMLC_ITMO_2024/assets/72860505/66ed7890-6fbf-4f03-84f3-c902ba60f694)
 
-
-
-Освновные команды для запуска сервиса реализованы в Makefile.
-
-1. Установка environment.
-```bash
-make venv
-```
-
-2. Установка requirements.
-```bash
-make install_requirements
-```
-
-## Запуск сервиса
-
-```bash
-make run_app
-```
-
-## Сбор образа
-
-```bash
-make build
-```
-
-*******
-
-
-## Linter style code
-You can also check your code using linters. Run the command:
-
-```bash
-make lint 
-```
-If you want to change the linter parameters, then configure [setup.cfg](setup.cfg) for yourself
-
+Список основных этапов и их краткое соедржание: 
+  - prepare: загрузка весов модели из DVC.
+  - build: сбор образа Docker-контейнера. 
+  - lint: проверка кода на style guide при помощи Flake8.
+  - tests: проверка кода на юнит и интеграционных тестах. 
+  - deploy: деплой сервиса в FastAPI. 
 
 ## Сервис
 Задеплоенный сервис доступен по ссылке: http://91.206.15.25:1001/docs
