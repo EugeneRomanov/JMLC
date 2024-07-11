@@ -1,0 +1,9 @@
+/venv38
+/.idea
+/__pycache__
+.DS_Store
+*__pycache__*
+weights/model.pt
+*.pt
+*.ckpt
+*.pth
