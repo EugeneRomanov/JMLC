@@ -1,0 +1,9 @@
+experiments
+lightning_logs
+.ipynb_checkpoints
+__pycache__
+venv
+.idea
+dataset.zip
+dataset
+/model
