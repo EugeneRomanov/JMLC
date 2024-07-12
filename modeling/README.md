@@ -5,7 +5,7 @@
 Структура обучения модели выглядит следующим образом: 
 ![image](https://github.com/EugeneRomanov/JMLC_ITMO_2024/assets/72860505/efa21b3d-e0eb-4a79-b1e7-7b8c696d8127)
 
-Основные технологии: Pytorch, OpenCV, Augmentation, Pytorch Lightning, ClearML, DVC, Flake8. 
+Основные технологии: PyTorch, OpenCV, Augmentation, Pytorch Lightning, ClearML, DVC, Flake8. 
 
 ## Описание данных
 Датасет состоит из 4000 снимков формата .jpg бассейна Амазонки со спутника Planet's Flock 2 станции International Space. Всего на снимках представлено 17 классов явлений, описывающих состояние леса. 
