@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/4d75e413-8f10-4dd0-a741-5ad2896a06db)# Service
+# Service
  
 После того, как было обучена модель в данном [репозитории](https://github.com/EugeneRomanov/JMLC_ITMO_2024/tree/main/modelling), можно перейти перейти к созданию и деплою сервиса в Gitlab.
 
@@ -35,7 +35,6 @@
 - вывод списка классов.
 
 Пример работы сервиса:
-![](https://github.com/user-attachments/assets/60539edf-50fc-4643-91e0-13e13333c0db)
-
+![Мультимедиа2](https://github.com/user-attachments/assets/cc6d29c6-81d0-4466-b0f8-c55df9d24493)
 
 Задеплоенный сервис доступен по ссылке: http://91.206.15.25:1001/docs
