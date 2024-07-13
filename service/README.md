@@ -16,6 +16,13 @@
 
 
 ## Запуск и деплой сервиса
+
+Для начала необходимо загрузить репозиторий в свою рабочую директорию Gitlab при помощи GIT.
+```bash
+git clone https://github.com/EugeneRomanov/JMLC_ITMO_2024.git
+```
+После загрузки репозитроия деплой начнется автоматически в разделе Build -> Jobs.
+
 Основные этапы деплоя сервиса описаны в файле [.gitlab-ci.yml](https://github.com/EugeneRomanov/JMLC_ITMO_2024/blob/main/service/.gitlab-ci.yml) и представлены на схеме: 
 
 ![image](https://github.com/EugeneRomanov/JMLC_ITMO_2024/assets/72860505/66ed7890-6fbf-4f03-84f3-c902ba60f694)
