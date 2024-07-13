@@ -21,7 +21,7 @@
 ```bash
 git clone https://github.com/EugeneRomanov/JMLC_ITMO_2024.git
 ```
-После загрузки репозитоhия деплой начнется автоматически в разделе Build -> Jobs.
+После загрузки репозитория деплой начнется автоматически в разделе Build -> Jobs.
 
 ![image](https://github.com/user-attachments/assets/c57c4459-2b5e-4590-b0d3-a545397f3b53)
 
