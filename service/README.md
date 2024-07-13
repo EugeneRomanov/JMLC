@@ -35,6 +35,6 @@
 - вывод списка классов.
 
 Пример работы сервиса:
-![Мультимедиа2](https://github.com/user-attachments/assets/cc6d29c6-81d0-4466-b0f8-c55df9d24493)
+![Мультимедиа3](https://github.com/user-attachments/assets/a7794565-186e-416f-bfd6-c7df6fcb35f0)
 
 Задеплоенный сервис доступен по ссылке: http://91.206.15.25:1001/docs
