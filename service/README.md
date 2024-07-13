@@ -35,7 +35,7 @@
 - вывод списка классов.
 
 Пример работы сервиса:
-![image](https://github.com/user-attachments/assets/60539edf-50fc-4643-91e0-13e13333c0db)
+![](https://github.com/user-attachments/assets/60539edf-50fc-4643-91e0-13e13333c0db)
 
 
 Задеплоенный сервис доступен по ссылке: http://91.206.15.25:1001/docs
