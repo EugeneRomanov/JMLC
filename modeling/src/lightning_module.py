@@ -85,5 +85,5 @@ class AmazonModule(pl.LightningModule):
             self.log(f'{prefix}{cur_loss.name}_loss', loss.item())
         
         total_loss = total_loss.sum()
-        self.log(f'{prefix}total_loss', total_loss.item()) #self.log(f'{prefix}total_loss', total_loss.item())
+        self.log(f'{prefix}total_loss', total_loss.item())
         return total_loss
