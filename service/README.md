@@ -1,6 +1,6 @@
 # Service
  
-После того, как было обучена модель в данном [репозитории](https://github.com/EugeneRomanov/JMLC_ITMO_2024/tree/main/modelling), можно перейти перейти к созданию и деплою сервиса в Gitlab.
+После того, как было обучена модель в данном [репозитории](https://github.com/EugeneRomanov/JMLC_ITMO_2024/tree/main/modelling), можно перейти перейти к запуску и деплою сервиса в Gitlab.
 
 Основные технологии: FastAPI, Docker, Flake8, Pytest, Gitlab CI/CD, DVC.
 
