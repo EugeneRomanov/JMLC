@@ -43,9 +43,9 @@ make download_dataset
 
 5. Настройка логирования экспериментов в ClearML:
     - Регистрация в [ClearML](https://app.community.clear.ml/).
-    - [В профиле ClearML](https://app.clear.ml/settings/workspace-configuration) нажми "Create new credentials" и скопируй содержимое.
-    - Запусти команду `clearml-init` в твоем терминале.
-    - Вставь содержимое credentials
+    - [В профиле ClearML](https://app.clear.ml/settings/workspace-configuration) нажать "Create new credentials" и скопировать содержимое.
+    - Запустить команду `clearml-init` в терминале.
+    - Вставить содержимое credentials
 
 6. Проверка кода на style guide.
 
